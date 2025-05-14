@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Game</title>
+    <link rel="icon" href="../img/icon.jpg"> 
+    <link rel="stylesheet" href="../static/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav id="nav">
+
+        <div class="container">
+
+            <div class="conteudo"> 
+                <div class="logo">
+                   
+                </div>
+        
+
+                <div class="pesquisar">
+                    <input type="search" placeholder="Pesquisar" >
+                   <button><i class="fa-solid fa-magnifying-glass" id="lupa"></i></button> 
+                    </input>
+                </div>
+            </div>
+
+           
+        </div>
+  
+    </nav>
+
+    <nav class="menu">
+        <div class="links">
+     <button> <a>  <i class="fas fa-home"></i> Início</a></button>
+      <button> <a>  <i class="fas fa-user"></i> Login Usuário</a></button>
+      <button> <a>  <i class="fas fa-user-shield"></i> Login Admin</a></button>
+      <button> <a>  <i class="fas fa-exchange-alt"></i> Empréstimos de Livros</a></button>
+      <button> <a>  <i class="fas fa-shopping-cart"></i> Compra de eBooks</a></button>
+      <button> <a>  <i class="fa-solid fa-user"></i> Catálogo</a></button>
+ 
+        </div>
+
+         </nav>
+
+    <!-- audio explicando a biblioteca -->
+     <div class="container-audio">
+        <h3> <i class="fas fa-headphones"></i> Sobre Nõs</h3>
+         <audio controls class="audio ">
+             <source src="img/audio.mp3" type="audio/mpeg">
+             Seu navegador não suporta o elemento de áudio.
+         </audio>
+     </div>
+
+     <div class="container-video">
+        <h3> <i class="fas fa-video"></i> Nossa Espaço</h3>
+        <p> Tour pela biblioteca, ala de mangás e cultura pop</p>
+        <video
+        controls
+        src="img/video.mp4"
+        width="620">
+        Desculpe, seu navegador não suporta vídeos incorporados, mas não se preocupe,
+        você pode
+
+        </video>
+     </div>
+
+    
+
+    <!-- Lista de livros da biblioteca -->
+    <div class="container-livros">
+        <h2> <i class="fas fa-book "></i> Livros da Biblioteca</h2>
+        <div class="comics-grid">
+            <div class="comic-card">
+                <div class="comic-badge">Novo</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPsdx50UDkQfkp4fCXOUrpjwjTek3dM1iQNVu8AodFUjPI5RzB" alt="Chainsaw Man">
+                <div class="comic-info">
+                    <h3>Chainsaw Man Vol. 12</h3>
+                    <p>Tatsuki Fujimoto</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.5</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comic-card">
+                <img src="https://m.media-amazon.com/images/I/41UMbgRHNSL._SY445_SX342_.jpg" alt="Spider-Verse">
+                <div class="comic-info">
+                    <h3>Spider-Verse #1</h3>
+                    <p>Marvel Comics</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comic-card">
+                <div class="comic-badge">Popular</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1hvVwc65zBm4JDS2q7LK5oFceG2matwZHRCOwo9SAV0jsEw5" alt="Attack on Titan">
+                <div class="comic-info">
+                    <h3>Attack on Titan Vol. 34</h3>
+                    <p>Hajime Isayama</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comic-card">
+                <img src="https://m.media-amazon.com/images/I/81YUGMBd0aL._AC_UF1000,1000_QL80_.jpg" alt="Sandman">
+                <div class="comic-info">
+                    <h3>Sandman: Edição Especial</h3>
+                    <p>Neil Gaiman</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comic-card">
+                <div class="comic-badge">Lançamento</div>
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbox59qLZH5kbFUO7m12Dg378YE3G5wLHdxnxm0R83gfUgNNy4" alt="My Hero Academia">
+                <div class="comic-info">
+                    <h3>My Hero Academia Vol. 35</h3>
+                    <p>Kohei Horikoshi</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>4.0</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="comic-card">
+                <img src="https://img.wook.pt/images/heartstopper-volume-4-alice-oseman/MXwyNjc5NTE0NHwyMzA4MTk2NHwxNjQ4NDc0NDg3MDAw/500x" alt="Heartstopper">
+                <div class="comic-info">
+                    <h3>Heartstopper Vol. 4</h3>
+                    <p>Alice Oseman</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="geek-footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>NEXUS LIBRARY</h3>
+                        <p>Sua biblioteca geek online com os melhores mangás, HQs e graphic novels.</p>
+                    </div>
+                   
+                    <div class="footer-section">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                        <p>#NexusLibrary</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Nexus Library. Todos os direitos reservados.</p>
+                    <div class="footer-links">
+                        <a href="#">Termos de uso</a>
+                        <a href="#">Política de privacidade</a>
+                        <a href="#">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+</body>
+</html>
