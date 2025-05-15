@@ -10,16 +10,20 @@
 }
 
 body {
+    width: 100%;   
+    overflow-x: hidden; 
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
     color: var(--light);
     background-color: var(--background);
-    overflow-x: hidden;
 }
 
+
+
 .logo{
+    fill: white;
+    color: white;
     display: flex;
     flex-direction: column;
     color: var(--light);
@@ -45,14 +49,17 @@ body {
 
 #nav{
     background-color: var(--dark);
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
-    width: 90%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
+
+
+
 
 .conteudo{
     padding-left: 0.5rem;
@@ -62,6 +69,43 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+ @media (max-width: 500px) { 
+
+
+           #nav{
+            background-color: var(--dark);
+            width: 100%;
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
+            justify-content: center;
+            }
+
+
+            .conteudo {
+                display: flex;
+                flex-direction: column ;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .menu{
+            background-color: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 0.5rem 0.5rem;
+            overflow-x: auto;    
+            white-space: nowrap; 
+            gap: 1rem; 
+            }
+         }
+
+.container{
+    width: 80%;
+    max-width: 1400px;
+    padding: 0 20px;
 }
 
 .pesquisar{
@@ -95,12 +139,12 @@ body {
 }
 
 .menu{
-
 background-color: var(--primary);
 display: flex;
 align-items: center;
 justify-content: center;
 padding: 0.5rem 0.5rem;
+gap: 1rem; 
 }
 
 .links{
@@ -268,16 +312,19 @@ video{
     margin-left: 0.3rem;
 }
 
-/* Rodapé */
-footer{
-    width: 120%;
+/* Footer */
+
+.footer {
+    margin: 0;
+    width: 100%;
     background-color: var(--dark);
+    margin-top: 3rem;
 }
 
-.geek-footer {
-    background-color: var(--dark);
-    padding: 3rem 0 1rem;
-    margin-top: 3rem;
+.container-footer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-content {
@@ -287,36 +334,21 @@ footer{
     margin-bottom: 2rem;
 }
 
-.footer-section h3 {
+.footer-secao {
+    padding: 0 1rem;
+}
+
+.footer-secao h3 {
     color: white;
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
 
-.footer-section p {
+.footer-secao p {
     color: var(--light);
     opacity: 0.8;
     font-size: 0.9rem;
     margin-bottom: 1rem;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section ul li a {
-    color: var(--light);
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 0.9rem;
-}
-
-.footer-section ul li a:hover {
-    color: var(--secondary);
 }
 
 .social-icons {
@@ -339,20 +371,24 @@ footer{
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+    gap: 1rem;
 }
 
 .footer-bottom p {
     color: var(--light);
     opacity: 0.7;
     font-size: 0.8rem;
+    margin: 0;
 }
 
 .footer-links {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -365,4 +401,26 @@ footer{
 
 .footer-links a:hover {
     opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-secao {
+        text-align: center;
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
 }
