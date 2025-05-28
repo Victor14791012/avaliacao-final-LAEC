@@ -70,7 +70,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
- @media (max-width: 500px) { 
+ @media (max-width: 768px) { 
 
 
            #nav{
@@ -108,9 +108,25 @@ body {
     padding: 0 20px;
 }
 
+.carrinho{
+    margin-left: 0.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.carrinho:hover{
+    cursor: pointer;
+    color: var(--primary);
+}
+
 .pesquisar{
     display: flex;
     align-items: center;
+    
 }
 
 .pesquisar input{
@@ -411,7 +427,7 @@ video{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
     .footer-content {
         grid-template-columns: 1fr;
     }
@@ -421,6 +437,10 @@ video{
     }
     
     .social-icons {
+        justify-content: center;
+    }
+
+    .comics-grid{
         justify-content: center;
     }
 }
