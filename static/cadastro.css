@@ -1,0 +1,62 @@
+:root {
+    --primary: #6c5ce7;
+    --primary-dark: #5649c0;
+    --secondary: #fd79a8;
+    --dark: #2d3436;
+    --light-dark: #636e72;
+    --light: #dfe6e9;
+    --background: #0f0e17;
+    --card-bg: #1a1a2e;
+}
+
+.cadastro h2{
+    margin-bottom: 1rem;
+    color: var(--light-dark);
+}
+
+.cadastro {
+    border-radius: 15px;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+.cadastro-botoes{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.2rem;
+}
+
+.cadastro-botoes button{
+    border: none;
+    color: white;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+
+}
+
+.cadastro-botoes button:hover{
+    border-radius: 15px;
+    background-color: var(--card-bg);
+
+}
+
+
+.cadastro-botoes a{
+   font-size: 12px;
+   transition: 1s;
+
+
+}
+
+.cadastro-botoes a:hover{
+    font-size: 13px;
+
+}
