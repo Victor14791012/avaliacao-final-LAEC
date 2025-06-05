@@ -7,11 +7,11 @@
     <link rel="icon" href="../img/logo-transparente.png">
     <link rel="stylesheet" href="../static/estilo.css">
     <link rel="stylesheet" href="../static/produto.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
-    <nav id="nav">
+      <nav id="nav">
 
         <div class="container">
 
@@ -42,6 +42,12 @@
                     <input type="search" placeholder="Pesquisar" >
                    <button><i class="fa-solid fa-magnifying-glass" id="lupa"></i></button> 
                     </input>
+
+                    <div class="carrinho">
+                             <i class="fa-solid fa-cart-shopping "></i> 
+                             <!-- <p>Carrinho</p> -->
+                    </div>
+                   
                 </div>
             </div>
 
@@ -49,55 +55,132 @@
         </div>
   
     </nav>
-
     <nav class="menu">
         <div class="links">
-     <button> <a href="index.html">  <i class="fas fa-home"></i> Início</a></button>
-      <button> <a  href="login.html">  <i class="fa-solid fa-right-to-bracket"></i> Login </a></button>
-      <button> <a  href="pagamento.html">  <i class="fas fa-exchange-alt"></i> Pagamento </a></button>
-      <button> <a  href="produtos.html">  <i class="fas fa-shopping-cart"></i> produtos</a></button>
-      <button> <a  href="produto.html">  <i class="fas fa-shopping-cart"></i> produto</a></button>
- 
+            <button><a href="index.html"><i class="fas fa-home"></i> Início</a></button>
+            <button><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a></button>
+            <button><a href="pagamento.html"><i class="fas fa-exchange-alt"></i> Pagamento</a></button>
+            <button><a href="produtos.html"><i class="fas fa-shopping-cart"></i> Produtos</a></button>
+            <button><a href="produto.html"><i class="fas fa-shopping-cart"></i> Produto</a></button>
         </div>
-
-         </nav>
- 
+    </nav>
 
     <div class="produto">
+        <div class="produto-container">
+            <div class="produto-imagem">
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg" >
+               
 
-    </div>
 
-      <footer class="footer">
-            <div class="container-footer">
-                <div class="footer-content">
-                    <div class="footer-secao">
-                        <h3>SEU GAME</h3>
-                        <p>Sua Ecomerce de jogos</p>
-                    </div>
-                   
-                    <div class="footer-secao">
-                        <h3>Redes Sociais</h3>
-                        <div class="social-icons">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-discord"></i></a>
-                            <a href="#"><i class="fab fa-tiktok"></i></a>
-                        </div>
-                        <p>#SEUGAME</p>
+                <div class="img-thumbnail">
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"  >
+                  <img src="https://m.media-amazon.com/images/I/61xj58FOB+L._AC_UF1000,1000_QL80_.jpg"  >
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202501/2901/923cc29185d3522b6bee93f8babff37f7cb60b7a408472e7.jpg"  >
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"  >
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"  >
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"  >
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"  >
+                  <img src="https://image.api.playstation.com/vulcan/ap/rnd/202110/2000/YMUoJUYNX0xWk6eTKuZLr5Iw.jpg"  >
+                </div>
+            
+            </div>
+            
+            <div class="produto-info">
+                <h1>Elden Ring - Edição Premium</h1>
+                <div class="produto-avaliacao">
+                    <div class="estrelas-aval">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>4.7 (2.348 avaliações)</span>
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Seu Game. Todos os direitos reservados.</p>
-                    <div class="footer-links">
-                        <a href="#">Termos de uso</a>
-                        <a href="#">Política de privacidade</a>
-                        <a href="#">Contato</a>
+                
+                <div class="produto-preco">
+                    <span class="preco-original">R$ 349,90</span>
+                    <span class="preco-promocional">R$ 279,90</span>
+                    <span class="desconto">20% OFF</span>
+                </div>
+                
+                <div class="produto-plataformas">
+                    <span>Plataformas:</span>
+                    <div class="plataformas-icones">
+                        <i class="fab fa-playstation" title="PlayStation"></i>
+                        <i class="fab fa-xbox" title="Xbox"></i>
+                        <i class="fab fa-windows" title="Windows"></i>
                     </div>
+                </div>
+                
+                <div class="produto-botoes">
+                    <button class="btn-comprar">COMPRAR AGORA</button>
+                    <button class="btn-carrinho">ADICIONAR AO CARRINHO</button>
+                </div>
+                
+                <div class="produto-garantia">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Compra 100% segura | Entrega digital imediata</span>
                 </div>
             </div>
-        </footer>
+        </div>
 
-      
-    
+        <div >
+            <div class="especificacoes-tabs">
+                <button class="tab-ativo">Descrição</button>
+                <button >Avaliações</button>
+            </div>
+            
+            <div class="especificacoes-conteudo">
+                <div class="conteudo-ativo">
+                    <h2>Sobre o Jogo</h2>
+                    <p>Elden Ring é um RPG de ação desenvolvido pela FromSoftware e publicado pela Bandai Namco Entertainment. O jogo é uma colaboração entre o diretor Hidetaka Miyazaki e o romancista de fantasia George R. R. Martin.</p>
+                    <p>Explore as Terras Intermédias, um mundo vasto e atmosférico que se abre para explorar à vontade. Enfrente desafios épicos, descubra segredos profundos e enfrente inimigos colossais em batalhas memoráveis.</p>
+                    
+                    <h3>Características Principais:</h3>
+                    <ul>
+                        <li>Mundo aberto vasto e sem fronteiras</li>
+                        <li>Sistema de combate estratégico e profundo</li>
+                        <li>Criação de personagem altamente customizável</li>
+                        <li>Multiplayer online (coop e PvP)</li>
+                        <li>História rica e misteriosa</li>
+                    </ul>
+                </div>
+                
+               
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-secao">
+                    <h3>SEU GAME</h3>
+                    <p>Sua Ecomerce de jogos</p>
+                </div>
+               
+                <div class="footer-secao">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <p>#SEUGAME</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Seu Game. Todos os direitos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Termos de uso</a>
+                    <a href="#">Política de privacidade</a>
+                    <a href="#">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

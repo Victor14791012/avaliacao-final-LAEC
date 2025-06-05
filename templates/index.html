@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Game</title>
-    <link rel="icon" href="../img/logo-transparente.png">
+    <title>| Seu Game</title>
+    <link rel="icon" href="../img/favi.png">
     <link rel="stylesheet" href="../static/estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <nav id="nav">
+      <nav id="nav">
 
         <div class="container">
 
             <div class="conteudo"> 
                 <div class="logo">
-                  <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 804 522"  height="100">
+                  <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 804 522"  height="120">
                     <title>logo-svg</title>
                 
                     
@@ -41,6 +41,12 @@
                     <input type="search" placeholder="Pesquisar" >
                    <button><i class="fa-solid fa-magnifying-glass" id="lupa"></i></button> 
                     </input>
+
+                    <div class="carrinho">
+                             <i class="fa-solid fa-cart-shopping "></i> 
+                             <!-- <p>Carrinho</p> -->
+                    </div>
+                   
                 </div>
             </div>
 
@@ -62,111 +68,60 @@
          </nav>
  
 
-    <!-- Lista de livros da biblioteca -->
-    <div class="container-livros">
-        <h2> <i class="fas fa-book "></i> Games Recomendados</h2>
-        <div class="comics-grid">
-            <div class="comic-card">
-                <div class="comic-badge">Novo</div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPsdx50UDkQfkp4fCXOUrpjwjTek3dM1iQNVu8AodFUjPI5RzB" alt="Chainsaw Man">
-                <div class="comic-info">
-                    <h3>Chainsaw Man Vol. 12</h3>
-                    <p>Tatsuki Fujimoto</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <span>4.5</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comic-card">
-                <img src="https://m.media-amazon.com/images/I/41UMbgRHNSL._SY445_SX342_.jpg" alt="Spider-Verse">
-                <div class="comic-info">
-                    <h3>Spider-Verse #1</h3>
-                    <p>Marvel Comics</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <span>4.0</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comic-card">
-                <div class="comic-badge">Popular</div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1hvVwc65zBm4JDS2q7LK5oFceG2matwZHRCOwo9SAV0jsEw5" alt="Attack on Titan">
-                <div class="comic-info">
-                    <h3>Attack on Titan Vol. 34</h3>
-                    <p>Hajime Isayama</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>5.0</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comic-card">
-                <img src="https://m.media-amazon.com/images/I/81YUGMBd0aL._AC_UF1000,1000_QL80_.jpg" alt="Sandman">
-                <div class="comic-info">
-                    <h3>Sandman: Edição Especial</h3>
-                    <p>Neil Gaiman</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>5.0</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comic-card">
-                <div class="comic-badge">Lançamento</div>
-                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbox59qLZH5kbFUO7m12Dg378YE3G5wLHdxnxm0R83gfUgNNy4" alt="My Hero Academia">
-                <div class="comic-info">
-                    <h3>My Hero Academia Vol. 35</h3>
-                    <p>Kohei Horikoshi</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <span>4.0</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="comic-card">
-                <img src="https://img.wook.pt/images/heartstopper-volume-4-alice-oseman/MXwyNjc5NTE0NHwyMzA4MTk2NHwxNjQ4NDc0NDg3MDAw/500x" alt="Heartstopper">
-                <div class="comic-info">
-                    <h3>Heartstopper Vol. 4</h3>
-                    <p>Alice Oseman</p>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>5.0</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="carrosel">
+        <img src="../img/banner1-mob.png" alt="banner" class="banner">
     </div>
+
+    <div class="categorias-carrosel">
+        <h1>Categorias</h1>
+        
+        <div class="categorias">
+            <div class="categoria">
+                <img src="../img/categorias/geek.png" alt="categoria - geek">
+                <p>Geek</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/anao.png" alt="categoria2">
+               <p>Anão</p>
+    </div>
+        
+            <div class="categoria">
+                <img src="../img/categorias/acessorios-para-veiculos.png" alt="categoria1">
+                <p>Acessórios</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/carro.png" alt="categoria2">
+                <p>Carro</p>
+    </div>
+        
+            <div class="categoria">
+                <img src="../img/categorias/celulares.png" alt="categoria1">
+                <p>Celulares</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/eletrodomestico.png" alt="categoria2">
+                <p>Eletrodoméstico</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/fitness.png" alt="categoria2">
+                <p>Fitness</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/livro.png" alt="categoria2">
+                <p>Livro</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/notebook.png" alt="categoria2">
+                <p>Notebook</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/categorias/roupa.png" alt="categoria2">
+                <p>roupa</p>
+            </div>
+   
+    </div>
+    </div>
+   
 
       <footer class="footer">
             <div class="container-footer">

@@ -79,7 +79,7 @@ body {
             }
 
             .menu{
-            max-width: 36px;
+            margin: 0;
             background-color: var(--primary);
             display: flex;
             align-items: center;
@@ -159,13 +159,12 @@ gap: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 0.5rem;
-    background-color: var(--primary);
+    /* padding: 0.5rem 0.5rem; */
+    background-color: var(--);
 }
 
-.links button{
-    color: var(--light);
-    padding: 0.6rem 1rem;
+.links button {
+    text-decoration: none;
     border: none;
     font-weight: 500;
     height: 30px;
@@ -175,6 +174,10 @@ gap: 1rem;
     background-color: var(--primary);
     transition: background-color 0.3s;
     transition: all 0.3s;
+}
+.links a{
+    text-decoration: none;
+    color: var(--dark);
 }
 
 .links button:hover {
@@ -376,6 +379,7 @@ video{
 .footer-bottom {
     border-top: 1px solid rgba(255,255,255,0.1);
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -418,6 +422,10 @@ video{
 }
 
 @media (max-width: 767px) {
+
+    .carrosel{
+        width: 90%;
+    }
     .footer-content {
         grid-template-columns: 1fr;
     }
@@ -433,4 +441,77 @@ video{
     .comics-grid{
         justify-content: center;
     }
+}
+
+.carrosel{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+.banner{
+    /* padding: 5px; */
+    width: auto;
+    height: 350px;
+}
+
+.categorias-carrosel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+     transition: 0.8 ease-in-out;
+}
+
+.categorias{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    width: 70%;
+    white-space: nowrap;
+    overflow-x: auto;
+    transition: 0.8 ease-in-out;
+}
+.categoria img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    object-fit: cover;
+}
+
+.categoria {
+    transition: 0.8 ease-in-out;
+    cursor: pointer;
+}
+
+.categoria p{
+    text-align: center;
+    width: 50px;
+    overflow-x: hidden;
+    color: #0F0E17;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    transition: 0.8s ease-out;
+}
+
+.categoria:hover p{
+    width: 100%;
+    color: var(--light);
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
