@@ -1,0 +1,77 @@
+.titulo-pagamento{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.grid-pagamento{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+.produtos-carrinho {
+    width: 90%;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.produtos-carrinho h2{
+    margin-bottom: 1rem;
+    color: var(--light-dark);
+}
+
+.lista-produtos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.item-carrinho{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item-carrinho img{
+    height: 100%;
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quantidade{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.quantidade button{ 
+    background-color: var(--primary);
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .grid-pagamento{
+        grid-template-columns: 1fr;
+    }
+}
