@@ -6,17 +6,18 @@
     margin: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
+    grid-template-columns: 1fr 0.6fr;
     justify-content: center;
 }
 
 .produtos-carrinho {
-    width: 90%;
+    padding-block: 15px;
+    width: 100%;
     max-width: 1400px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     margin: 0 auto;
 }
@@ -92,4 +93,165 @@
     width: 70%;
     height: 2px;
     background-color: var(--primary);
+}
+
+.cupom-desconto{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.cupom-desconto input{
+    width: 70%;
+    height: 20px;
+    background-color: var(--background-pagamento);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: var(--light);
+}
+
+.cupom-desconto button{
+    width: auto;
+    height: 30px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    background-color: var(--secondary);
+    border: none;
+    color: var(--light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cupom-desconto button:hover{
+    background-color: var(--primary);
+}
+
+.linha-resumo{ 
+    width: 80%;
+    margin:auto;
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.frete-gratis{
+    color: var(--verde-pagamento);
+}
+
+.cupom-ativo{
+    color: var(--verde-pagamento);
+}
+
+.resumo-compra{
+    padding-block: 15px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumo-compra h2{
+    text-align: center;
+    margin-bottom: -15px;
+    color: var(--light-dark);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.valor-total{
+    color: var(--secondary);
+}
+
+.opcoes-pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.opcao-pagamento{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    padding-block: 15px;
+    border-radius: 8px;
+    background-color: var(--background-pagamento);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.opcao-pagamento:hover{
+    background-color: var(--primary);
+}
+
+.btn-finalizar{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--secondary);
+    border: none;
+    color: var(--light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.selo-seguranca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    color: var(--light);
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.selo-seguranca i{
+    font-size: 1.1rem;
+    color: var(--verde-pagamento);
+}
+
+.btn-remover{
+    height: 40px;
+    color: var(--secondary);
+    font-size: 1.05rem;
+    border-radius: 4px;
+    background-color: var(--background-pagamento);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.metodos-pagamento h3{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--light);
+    margin-top: 1rem;
+    margin-bottom: -25px;
+    padding: 1rem;
 }

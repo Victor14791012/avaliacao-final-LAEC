@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finalizar Compra | Seu Game</title>
-    <link rel="icon" href="../img/logo-transparente.png">
+    <title>| Carrinho</title>
+    <link rel="icon" href="../img/favi.png">
     <link rel="stylesheet" href="../static/estilo.css">
     <link rel="stylesheet" href="../static/carrinho.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -59,12 +59,10 @@
         <h1 class="titulo-pagamento"><i class="fas fa-credit-card"></i> Finalizar Compra</h1>
         
         <div class="grid-pagamento">
-            <!-- Seção de Produtos no Carrinho -->
             <section class="produtos-carrinho">
                 <h2>Seu Carrinho</h2>
                 <hr class="linha-carrinho">
                 <div class="lista-produtos">
-                    <!-- Item 1 -->
                     <div class="item-carrinho">
                         <img src="https://m.media-amazon.com/images/I/41UMbgRHNSL._SY445_SX342_.jpg" alt="Produto">
                         <div class="info-produto">
@@ -147,8 +145,7 @@
                             </label>
                         </div>
                         
-                        <!-- Formulário selecionar pagamento-->
-                        <div class="form-cartao">
+                        <!-- <div class="form-cartao">
                             <div class="input-group">
                                 <label>Número do Cartão</label>
                                 <input type="text" placeholder="0000 0000 0000 0000">
@@ -175,7 +172,7 @@
                                     <option>3x de R$ 38,91 sem juros</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     
                     <button class="btn-finalizar">Finalizar Compra</button>
@@ -190,30 +187,146 @@
     </main>
 
     <!-- Você também pode gostar -->
-    
-        <div class="container-cards">
-            <h2><i class="fas fa-heart"></i> Você também pode gostar</h2>
-            <div class="comics-grid">
-                <!-- começa aqui -->
-                <div class="comic-card">
-                    <img src="https://m.media-amazon.com/images/I/81YUGMBd0aL._AC_UF1000,1000_QL80_.jpg" alt="Sandman">
-                    <div class="comic-info">
-                        <h3>Sandman: Edição Especial</h3>
-                        <p>Neil Gaiman</p>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <span>5.0</span>
-                        </div>
-                    </div>
+    <div class="container-cards">
+    <h2><i class="fas fa-heart"></i> Você também pode gostar</h2>
+    <div class="comics-grid">
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/81YUGMBd0aL._AC_UF1000,1000_QL80_.jpg" alt="Sandman">
+            <div class="comic-info">
+                <h3>Sandman: Edição Especial</h3>
+                <p>Neil Gaiman</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
                 </div>
-                
-
+                <button class="price">R$ 89,90</button>
             </div>
         </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/718jJRdvDsL._AC_SX679_.jpg" alt="Kindle">
+            <div class="comic-info">
+                <h3>Kindle 11ª Geração</h3>
+                <p>Amazon</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7</span>
+                </div>
+                <button class="price">R$ 449,00</button>
+            </div>
+        </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/71xoR4A6q-L._AC_SX679_.jpg" alt="Echo Dot">
+            <div class="comic-info">
+                <h3>Echo Dot (5ª Geração)</h3>
+                <p>Amazon</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>5.0</span>
+                </div>
+                <button class="price">R$ 379,00</span>
+            </div>
+        </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/91ocU8970hL._AC_UF1000,1000_QL80_.jpg" alt="Harry Potter">
+            <div class="comic-info">
+                <h3>Box Harry Potter</h3>
+                <p>J.K. Rowling</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.8</span>
+                </div>
+                <button class="price">R$ 199,90</span>
+            </div>
+        </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/71ANJQTALWL._AC_SX679_.jpg" alt="PS5">
+            <div class="comic-info">
+                <h3>PlayStation 5</h3>
+                <p>Sony</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>4.5</span>
+                </div>
+                <button class="price">R$ 3.899,00</button>
+            </div>
+        </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_UF1000,1000_QL80_.jpg" alt="AirPods Pro">
+            <div class="comic-info">
+                <h3>AirPods Pro (2ª Geração)</h3>
+                <p>Apple</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7</span>
+                </div>
+                <button class="price">R$ 1.899,00</button>
+            </div>
+        </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/61nYN0Pi+-L._AC_SX679_.jpg" alt="Smart TV">
+            <div class="comic-info">
+                <h3>Smart TV 50" 4K UHD</h3>
+                <p>Samsung</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>4.3</span>
+                </div>
+                <button class="price">R$ 2.199,00</button>
+            </div>
+        </div>
+
+        <div class="comic-card">
+            <img src="https://m.media-amazon.com/images/I/71A3yzf7YAL.__AC_SY300_SX300_QL70_ML2_.jpg" alt="Bicicleta">
+            <div class="comic-info">
+                <h3>Bicicleta Mountain Bike</h3>
+                <p>Caloi</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>3.7</span>
+                </div>
+                <button class="price">R$ 1.299,00</button>
+            </div>
+        </div>
+    </div>
+</div>
   
 
   

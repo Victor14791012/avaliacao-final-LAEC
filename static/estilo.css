@@ -7,7 +7,8 @@
     --light: #dfe6e9;
     --background: #0f0e17;
     --card-bg: #1a1a2e;
-    --background-pagamento: #262638
+    --background-pagamento: #262638;
+    --verde-pagamento: #089E4F
 }
 
 body {
@@ -290,7 +291,7 @@ video{
     width: 210px;
     height: 300px;
     display: block;
-    object-fit: fill;
+    object-fit: cover;
     transition: transform 0.3s;
 }
 
@@ -317,7 +318,8 @@ video{
 
 .rating {
     display: flex;
-    align-items: center;
+    align-items: start;
+    justify-content: start;
     gap: 0.3rem;
     color: #fdcb6e;
 }
@@ -630,4 +632,42 @@ hr{
 
 .selos a:hover {
     text-decoration: underline;
+}
+
+
+/* preços tinha esquecido */
+.comic-info .price {
+    display: flex;
+    font-size: 1.1rem;
+    color: var(--light);
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: var(--primary);
+    padding: 0.3rem 1rem;
+    border-radius: 4px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.comic-card:hover .price {
+    background-color: var(--primary-dark);
+}
+
+
+
+@media (max-width: 768px) {
+    .comic-info .price {
+        font-size: 1rem;
+        padding: 0.2rem 0.5rem;
+    }
+    
+    .rating {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .rating-stars {
+        margin-bottom: 0.3rem;
+    }
 }

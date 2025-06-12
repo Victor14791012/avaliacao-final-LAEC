@@ -1,0 +1,47 @@
+.pagamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+.qr{
+    width: 300px;
+    height: 300px;
+}
+
+.produtos-carrinho{
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h8{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.copiar{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+    background-color: var(--card-bg);
+    color:white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+.copiar:hover{
+    background-color: var(--primary);
+    transform: scale(1.1);
+    margin: 15px;
+}
